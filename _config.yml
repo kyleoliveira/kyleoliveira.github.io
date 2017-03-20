@@ -32,3 +32,6 @@ collections:
   recipes:
     output: true
     permalink: /:collection/:title.html
+  leadership:
+    output: true
+    permalink: /:collection/:title.html

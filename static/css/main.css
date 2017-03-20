@@ -164,6 +164,18 @@ body {
   font-size: 18px;
 }
 
+.push-right {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.push-left {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 /* Footer 
 -------------------------------------------------- */
 

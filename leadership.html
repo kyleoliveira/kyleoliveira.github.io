@@ -1,0 +1,22 @@
+---
+layout: layout
+title: Leadership Projects
+---
+
+<div class="container">
+	<h3>Leadership Projects</h3>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<p>I have had active leadership projects for many years now. I'll highlight a few here:</p>
+			{% for project in site.leadership %}
+			<div class="row">
+				<div class="col-sm-8 col-md-8 col-lg-8">
+					<h5 style="text-align: left">
+						<strong><a href="{{ site.baseurl }}{{ project.url }}">{{ project.title }}</a></strong>
+					</h5>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>

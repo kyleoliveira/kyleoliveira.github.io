@@ -3,7 +3,7 @@ highlighter: rouge
 markdown: kramdown
 rdiscount:
   extensions: [smart]
-permalink: /:title.html
+permalink: /blog/:categories/:year/:month/:day/:title.html
 paginate: 5
 gems: [jekyll-paginate]
 port: 3000
@@ -11,7 +11,7 @@ safe: true
 
 
 # edit here to achieve your personal greatness
-url: http://kyleoliveira.github.io/
+url: http://kyleoliveira.github.io
 baseurl:
 title: Kyle Oliveira
 author: Kyle Oliveira
@@ -27,3 +27,8 @@ linkedin: kcoliveira
 
 # needed for travis-ci build
 exclude: [vendor]
+
+collections:
+  recipes:
+    output: true
+    permalink: /:collection/:title.html

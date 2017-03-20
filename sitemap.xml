@@ -31,6 +31,28 @@ layout: null
       {% endif %}
     </url>
   {% endfor %}
+  {% for recipe in site.recipes %}
+  <url>
+    <loc>{{ site.url }}{{ recipe.url }}</loc>
+    {% if recipe.sitemap.lastmod %}
+    <lastmod>{{ recipe.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+    {% elsif recipe.date %}
+    <lastmod>{{ recipe.date | date_to_xmlschema }}</lastmod>
+    {% else %}
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    {% endif %}
+    {% if recipe.sitemap.changefreq %}
+    <changefreq>{{ recipe.sitemap.changefreq }}</changefreq>
+    {% else %}
+    <changefreq>monthly</changefreq>
+    {% endif %}
+    {% if recipe.sitemap.priority %}
+    <priority>{{ recipe.sitemap.priority }}</priority>
+    {% else %}
+    <priority>0.5</priority>
+    {% endif %}
+  </url>
+  {% endfor %}
   {% for page in site.pages %}
   <url>
     <loc>{{ site.url }}{{ page.url }}</loc>

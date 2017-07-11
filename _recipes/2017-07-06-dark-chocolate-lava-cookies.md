@@ -11,8 +11,8 @@ tags:
 |       Dark Chocolate Lava Cookies       |
 +-----------------------------------------+
 
-2 1/2 Cups Unsalted Butter   \ 1. Cream these, then add...
-2     Cups Sugar             /
+2 1/2 Sticks Unsalted Butter   \ 1. Cream these, then add...
+2     Cups   Sugar             /
 
 2     Eggs                   \ 2. Add to the creamed mix, and combine...
 1     Tbsp Vanilla           /
